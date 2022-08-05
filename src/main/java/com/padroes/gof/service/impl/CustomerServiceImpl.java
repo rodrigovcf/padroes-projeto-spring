@@ -1,8 +1,11 @@
 package com.padroes.gof.service.impl;
 
+import org.springframework.stereotype.Service;
+
 import com.padroes.gof.model.Customer;
 import com.padroes.gof.service.CustomerService;
 
+@Service
 public class CustomerServiceImpl implements CustomerService{
 
 	@Override
