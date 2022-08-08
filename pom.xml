@@ -34,6 +34,9 @@
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-starter-openfeign</artifactId>
 		</dependency>
+		
+		<!-- Para acessar usamos http://localhost:8080/swagger-ui/index.html -->
+		<!-- No campo explorer da pagina, colocamos= /v3/api-docs -->
 		<dependency>
 			<groupId>org.springdoc</groupId>
 			<artifactId>springdoc-openapi-ui</artifactId>

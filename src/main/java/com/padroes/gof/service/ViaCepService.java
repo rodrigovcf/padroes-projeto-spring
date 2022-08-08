@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 import com.padroes.gof.model.AddressCustomer;
 
 /*
- * Client HTTP, criado via <b>OpenFeign</b>, para o consummo da <b>API ViaCEP</b>.
+ * Client HTTP, criado via <b>OpenFeign</b>, para o consumo da <b>API ViaCEP</b>.
  * 
  *  @see <a href="https://spring.io/projects/spring-cloud-openfeign">Spring Cloud OpenFeign</a>
  */
