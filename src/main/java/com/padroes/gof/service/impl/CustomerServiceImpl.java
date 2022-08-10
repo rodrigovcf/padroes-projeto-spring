@@ -5,6 +5,7 @@ import java.util.Optional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import com.padroes.gof.exceptions.CustomerNullException;
 import com.padroes.gof.model.AddressCustomer;
 import com.padroes.gof.model.Customer;
 import com.padroes.gof.repository.AddressRepository;
@@ -37,6 +38,8 @@ public class CustomerServiceImpl implements CustomerService{
 
 	@Override
 	public void insert(Customer customer) {
+		if(customer.getName() == null)
+			throw new CustomerNullException();
 		saveCustomerByCep(customer);
 	}
 
